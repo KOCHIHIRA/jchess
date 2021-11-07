@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    position: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 630px;
+    height: 630px;
+}
+.square {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(230, 209, 152);
+}
+.board-top {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.board-nottop {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.square-last {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #000000;
+}
+
+.piece {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
